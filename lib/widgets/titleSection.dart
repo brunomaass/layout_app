@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:layout_app/widgets/favorite_widget.dart';
 
 class TitleSection extends StatelessWidget {
   const TitleSection({
@@ -40,11 +41,8 @@ class TitleSection extends StatelessWidget {
             ],
           )),
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          const Text('41'),
+          
+          const FavoriteWidget(),
         ],
       ),
     );
